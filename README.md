@@ -1,4 +1,32 @@
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
+This file contains my completed implementation of the Build a Machine Learning Pipeline for Short-term Rental Prices in NYC. 
+
+## Project Links
+
+- **GitHub Repository:** https://github.com/savjfarooq-dev/Project-Build-an-ML-Pipeline-Starter.git
+- **Weights & Biases Project:** https://wandb.ai/savfarooq-western-governors-university/nyc_airbnb/workspace?nw=nwusersavfarooq
+
+## Project Overview
+
+The pipeline uses MLflow, Hydra, and Weights & Biases to create a reproducible machine learning workflow that:
+
+- Fetches the raw data
+- Cleans and pre-processes data
+- Tests the data
+- Trains the machine learning model with the training dataset
+- Selects the best model and test the model with the test dataset
+- Tracks data, models, metrics, and lineage in Weights & Biases
+- Releases versioned pipelines through GitHub
+
+The selected model achieved a validation MAE of 34.18426 and a test MAE of 
+33.84692, with comparable validation and test performance.
+
+## Releases
+
+- **1.0.0**  Initial completion of the ML pipeline release
+- **1.0.1**  Added a geographic boundary filtering to remove listings outside   the expected NYC area and successfully retrained the pipeline on `sample2.csv`
+
+# Project Overview 
 You are working for a property management company renting rooms and properties for short periods of 
 time on various rental platforms. You need to estimate the typical price for a given property based 
 on the price of similar properties. Your company receives new data in bulk every week. The model needs 
